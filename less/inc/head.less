@@ -1,0 +1,46 @@
+.head {
+    background-color: @color-bg-light;
+    width: 100%;
+    padding: 3px 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.head__box {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    position: relative;
+}
+.head__back-next-box {
+    margin-right: 5px;
+}
+.head__textfield {
+    padding: 0;
+}
+.head__search-icon {
+    top: 1px!important;
+}
+.head__switch-text {
+    cursor: pointer;
+    margin-left: 15px;
+    font-size: 13px;
+}
+.head__switch-box {
+
+}
+.head__login-box {
+    margin-left: 15px;
+}
+.head__chip {
+    background-color: transparent;
+    margin: 0;
+    cursor: pointer;
+    &:active {
+        background-color: transparent;
+    }
+}
+.head__chip-text {
+    color: @color-text-dark;
+}

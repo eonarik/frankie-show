@@ -1,0 +1,71 @@
+* {
+
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: @color-text-dark;
+}
+
+a {
+	color: @color-violet;
+	text-decoration: none;
+	
+	&:hover {
+		text-decoration: none;
+		color: lighten(@color-violet, 15%);
+		border-bottom: .1em solid;
+	}
+}
+.global__wrapper-flex {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+.mdl-button {
+    &--color-text-dark {
+        color: @color-text-dark;
+    }
+    &--color-text-light {
+        color: @color-text-light;
+    }
+	
+	&:hover {
+		border-bottom: none;
+	}
+}
+.mdl-button--circle {
+    border-radius: 50%;
+    background: rgba(255,255,255,.5);
+}
+.mdl-switch__thumb {
+    background-color: @color-text-light;
+}
+.mdl-grid--mobile {
+    padding: 0;
+}
+.global__tab-bar {
+    border-bottom: none;
+}
+.global__tab-bar-tab {
+    color: @color-text-dark;
+    outline: none;
+}
+.global__tab-bar-tab.is-active {
+    color: @color-violet!important;
+}
+.global__registration-box {
+    position: absolute;
+    padding: 10px 0;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+.global__button-registration {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: @color-violet;
+}

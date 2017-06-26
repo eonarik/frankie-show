@@ -1,0 +1,94 @@
+.carte {
+    background-color: @color-bg-light;
+    border-top: 1px solid @color-bg-dark;
+    border-bottom: 1px solid @color-bg-dark;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.carte__top-box {
+    flex: 1 0 auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+}
+.carte__top-box-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.carte__box {
+    margin: 15px 0 30px;
+    &--no-margin {
+        margin: 0;
+    }
+}
+.carte__title {
+    text-transform: uppercase;
+    font-weight: 300;
+    display: block;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.carte__list {
+    padding: 0;
+    margin: 5px 0 0;
+    & li {
+        height: 35px;
+        display: table;
+        width: 100%;
+        & a {
+            display: table-cell;
+            height: 100%;
+            width: 100%;
+            vertical-align: middle;
+            color: @color-text-dark;
+            padding-left: 20px;
+            text-decoration: none;
+            font-weight: 400;
+            position: relative;
+            outline: none;
+            &:hover {
+                color: @color-text-light;
+				border-bottom: none;
+            }
+            & i {
+                vertical-align: top;
+                margin-right: 10px;
+            }
+        }
+    }
+    & .active {
+        & a {
+            color: @color-text-light;
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 4px;
+                background-color: @color-violet;
+            }
+        }
+    }
+    &--bottom {
+        margin: 0;
+        padding-bottom: 5px;
+        & li {
+            height: 55px;
+            border-top: 1px solid @color-bg-dark;
+        }
+    }
+}
+.carte__bottom-box {
+    flex: 0 0 auto;
+}

@@ -1,0 +1,35 @@
+._album__card {
+    width: 100%;
+    min-height: auto;
+    background-color: @color-text-light;
+}
+._album__image-box {
+    position: relative;
+    padding: 0;
+    & img {
+        object-fit: cover;
+        width: 100%;
+    }
+}
+._album__link-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: @color-text-light;
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(40,40,40,1) 0%, rgba(125,185,232,0) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(40,40,40,1) 0%,rgba(125,185,232,0) 100%);
+    background: radial-gradient(ellipse at center,  rgba(40,40,40,1) 0%,rgba(125,185,232,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282828', endColorstr='#007db9e8',GradientType=1 );
+    & i {
+        font-size: 50px;
+    }
+}
